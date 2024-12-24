@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmn24o8xukbqm"]
+
+[ext_resource type="Texture2D" uid="uid://ctp6kxuxdacnw" path="res://icon.jpeg" id="1_kj6wd"]
+[ext_resource type="Script" path="res://script/botao_repelente_sonoro_mosquitos.gd" id="2_p7gah"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="barra_superior" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 360.0
+offset_bottom = 40.0
+scale = Vector2(2.00237, 2.00237)
+
+[node name="icone" type="Sprite2D" parent="barra_superior"]
+position = Vector2(179.787, 19.9764)
+scale = Vector2(0.62819, 0.62819)
+texture = ExtResource("1_kj6wd")
+
+[node name="nome" type="RichTextLabel" parent="barra_superior"]
+layout_mode = 0
+offset_left = 7.99054
+offset_top = 8.98936
+offset_right = 77.9905
+offset_bottom = 31.9894
+text = "UTILBOX"
+fit_content = true
+
+[node name="botao_repelente_sonoro_mosquitos" type="Button" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 103.0
+offset_right = 269.0
+offset_bottom = 134.0
+scale = Vector2(2.66687, 2.66687)
+text = "Repelente Sonoro Para Mosquitos
+"
+script = ExtResource("2_p7gah")
